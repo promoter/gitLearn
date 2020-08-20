@@ -43,9 +43,31 @@ Initial commit 。。。。。。。。。。。。。
 
 提交版本：
 
-```
-git commit -m '第一次提交'
-```
+`git commit -m '第一次提交'`
+
+## 提交到远程仓库
+
+使用ssh工具生成公共密齿，然后添加到github/gitee网站中。
+
+先查看远程库信息:
+
+`git remote -v`
+
+如果没有输出代表没有任何远程库信息
+
+添加远程库(可以同时添加多个远程库)：
+
+`git remote add origin git@gitee.com:promoter/gitLearn.git`
+
+`git remote add origin2 git@github.com:promoter/gitLearn.git`
+
+如果移除远程库：
+
+`git remote rm origin`
+
+
+
+
 
 
 
