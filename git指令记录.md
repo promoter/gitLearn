@@ -1,4 +1,4 @@
-# cgit指令记录
+# git指令记录
 
 ## 本地创建仓库
 
@@ -89,7 +89,27 @@ Initial commit 。。。。。。。。。。。。。
 
 `git checkout dev`
 
-创建并且切换到dev分支
+创建并且切换到dev分支。
+
+查看当前分支
+
+`git branch`
+
+修改提交之后，合并分支到master主分支
+
+`git merge master`
+
+切换分支到master(如果当前有修改未提交，切换分支会出错。)：
+
+`git checkout master`
+
+删除分支(不能删除当前所在分支):
+
+`git branch -d dev`
+
+
+
+
 
 
 
