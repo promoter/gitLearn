@@ -47,7 +47,7 @@ Initial commit 。。。。。。。。。。。。。
 
 ## 提交到远程仓库
 
-使用ssh工具生成公共密齿，然后添加到github/gitee网站中。
+使用**ssh工具**生成公共密齿，然后添加到github/gitee网站中。
 
 先查看远程库信息:
 
@@ -64,6 +64,38 @@ Initial commit 。。。。。。。。。。。。。
 如果移除远程库：
 
 `git remote rm origin`
+
+提交到远程仓库：
+
+`git push origin master`
+
+`git push origin2 master`
+
+去gitee和github网站上看，可以看到本地多次commit的提交记录了。
+
+## 从远程库中克隆
+
+`git clone git@gitee.com:promoter/gitLearn.git`
+
+`git clone git@github.com:promoter/gitLearn.git`
+
+## 创建使用分支
+
+`git checkout -b dev`
+
+或者
+
+`git branch dev`
+
+`git checkout dev`
+
+创建并且切换到dev分支
+
+
+
+
+
+
 
 
 
