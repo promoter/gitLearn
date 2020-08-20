@@ -95,9 +95,9 @@ Initial commit 。。。。。。。。。。。。。
 
 `git branch`
 
-修改提交之后，合并分支到master主分支
+修改提交之后，合并分支到master主分支(别写错了)
 
-`git merge master`
+`git merge dev`
 
 切换分支到master(如果当前有修改未提交，切换分支会出错。)：
 
