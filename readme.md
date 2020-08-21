@@ -21,9 +21,15 @@ Initial commit 。。。。。。。。。。。。。
 
 ## 添加到stage并且提交
 
+添加文件修改
+
 `git add a/*`
 
 `git add git指令记录.md`
+
+删除文件
+
+`git rm git指令记录.md`
 
 添加文件。添加之后，文件被放置到“暂存区“（stage）.使用status命令可以看到，当前stage的状态。
 
