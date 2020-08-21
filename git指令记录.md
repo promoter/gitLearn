@@ -122,6 +122,18 @@ Initial commit 。。。。。。。。。。。。。
 
 `git branch -d dev`
 
+## 多人协作一般做法
+
+
+
+把机器的ssh添加到git服务器；
+
+然后clone项目
+
+`git clone git@gitee.com:promoter/gitLearn.git`
+
+
+
 
 
 
