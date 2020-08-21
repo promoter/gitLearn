@@ -142,7 +142,15 @@ clone下拉之后，会发项，如果在git服务器中提交了多个分支，
 
 `git switch -c dev origin/dev`
 
-干完活儿，把dev分支merge到master;然后把master  push提交到远程服务器”
+干完活儿，提交之前，可能同事有提交版本，所以先使用pull拉取服务器上最新的更新
+
+`git pull`
+
+我们之前dev是直接从远程仓库创建到本地的，所以能直接pull,如果是自己在本地创建的dev,pull会失败，因为本地分支没有和服务器分支对应起来，使用参数建立连接
+
+`git branch --set-upstream-to=origin/dev dev`
+
+提交，把dev分支merge到master;然后把master  push提交到远程服务器：
 
 `git switch master`
 
@@ -154,11 +162,43 @@ clone下拉之后，会发项，如果在git服务器中提交了多个分支，
 
 `git push origin dev`
 
+## 查看git提交路线图
 
+`git log --graph --pretty=oneline --abbrev-commit`
 
+## 标签
 
+查看所有标签,默认无：
 
+`git tag`
 
+查看某个标签信息:
+
+`git show v0.1`
+
+删除本地标签：
+
+`git tag -d v0.1`
+
+给当前版本打标签，或者历史版本打标签,并且添加标签说明：
+
+`git tag -a v1.0 -m 'version 1.0 released' `
+
+`git tag -a v0.1 -m 'version 0.1 released' 9ca2ff4`
+
+把标签推送到远程:
+
+推送单个：
+
+`git push origin v1.0`
+
+推送所有：
+
+`git push origin --tags`
+
+删除远程标签：
+
+`git push origin :refs/tags/v1.2`
 
 
 
