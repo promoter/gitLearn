@@ -132,6 +132,30 @@ Initial commit 。。。。。。。。。。。。。
 
 `git clone git@gitee.com:promoter/gitLearn.git`
 
+clone下拉之后，会发项，如果在git服务器中提交了多个分支，但是clone下载只会看到master分支。
+
+我们一般在dev分支上干活，所以需要在创建远程`origin`的`dev`分支到本地
+
+`git checkout -b dev origin/dev`
+
+或
+
+`git switch -c dev origin/dev`
+
+干完活儿，把dev分支merge到master;然后把master  push提交到远程服务器”
+
+`git switch master`
+
+`git merge dev`
+
+`git push origin master`
+
+或者，直接把dev push到远程库
+
+`git push origin dev`
+
+
+
 
 
 
