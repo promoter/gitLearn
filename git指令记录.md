@@ -94,7 +94,6 @@ Initial commit 。。。。。。。。。。。。。
 查看当前分支
 
 `git branch`
-
 切换分支到master(如果当前有修改未提交，切换分支会出错。)：
 
 `git checkout master`
@@ -102,6 +101,10 @@ Initial commit 。。。。。。。。。。。。。
 修改提交之后，合并分支到master主分支(当前在master分区，所以merge dev,是吧)
 
 `git merge dev`
+
+切换分支到master(如果当前有修改未提交，切换分支会出错。)：
+
+`git checkout master`
 
 删除分支(不能删除当前所在分支):
 
