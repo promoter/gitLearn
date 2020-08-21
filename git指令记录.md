@@ -89,6 +89,14 @@ Initial commit 。。。。。。。。。。。。。
 
 `git checkout dev`
 
+(
+
+`git switch -c dev`
+
+(switch指令新版本git才能使用)
+
+)
+
 创建并且切换到dev分支。
 
 查看当前分支
@@ -96,15 +104,19 @@ Initial commit 。。。。。。。。。。。。。
 `git branch`
 切换分支到master(如果当前有修改未提交，切换分支会出错。)：
 
-`git checkout master`
+`git checkout master`或 `git switch master`
+
+如果当前修改未完成想切换分支，则使用stash保存，然后使用git stash pop恢复。
+
+`git stash`
+
+`git stash list`
+
+`git stash pop`
 
 修改提交之后，合并分支到master主分支(当前在master分区，所以merge dev,是吧)
 
 `git merge dev`
-
-切换分支到master(如果当前有修改未提交，切换分支会出错。)：
-
-`git checkout master`
 
 删除分支(不能删除当前所在分支):
 
